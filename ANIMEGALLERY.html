@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Kunst Galerie</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #imageContainer {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="imageContainer">
+        <img id="currentImage" src="https://babybounce500.github.io/ANIME/1.jpg" alt="AI Kunstwerk">
+    </div>
+    <script>
+        
+const images = [
+    "https://babybounce500.github.io/ANIME/1.jpg",
+    "https://babybounce500.github.io/ANIME/2.jpg",
+    "https://babybounce500.github.io/ANIME/3.jpg",
+    "https://babybounce500.github.io/ANIME/3a.jpg",
+            "https://babybounce500.github.io/ANIME/4.jpg",
+            "https://babybounce500.github.io/ANIME/5.jpg",
+            "https://babybounce500.github.io/ANIME/6.jpg",
+            "https://babybounce500.github.io/ANIME/7.jpg",
+            "https://babybounce500.github.io/ANIME/8.jpg",
+            "https://babybounce500.github.io/ANIME/9.jpg",
+            "https://babybounce500.github.io/ANIME/10.jpg",
+            "https://babybounce500.github.io/ANIME/11.jpg",
+            "https://babybounce500.github.io/ANIME/12.jpg",
+            "https://babybounce500.github.io/ANIME/13.jpg",
+            "https://babybounce500.github.io/ANIME/14.jpg",
+            "https://babybounce500.github.io/ANIME/15.jpg",
+            "https://babybounce500.github.io/ANIME/16.jpg",
+            "https://babybounce500.github.io/ANIME/17.jpg",
+            "https://babybounce500.github.io/ANIME/18.jpg",
+            "https://babybounce500.github.io/ANIME/19.jpg",
+            "https://babybounce500.github.io/ANIME/20.jpg",
+            "https://babybounce500.github.io/ANIME/21.jpg",
+            "https://babybounce500.github.io/ANIME/22.jpg",
+            "https://babybounce500.github.io/ANIME/23.jpg",
+            "https://babybounce500.github.io/ANIME/24.jpg",
+            "https://babybounce500.github.io/ANIME/25.jpg",
+            "https://babybounce500.github.io/ANIME/26.jpg",
+            "https://babybounce500.github.io/ANIME/27.jpg",
+            "https://babybounce500.github.io/ANIME/28.jpg",
+            "https://babybounce500.github.io/ANIME/29.jpg",
+            "https://babybounce500.github.io/ANIME/30.jpg",
+            "https://babybounce500.github.io/ANIME/31.jpg",
+            "https://babybounce500.github.io/ANIME/32.jpg",
+            "https://babybounce500.github.io/ANIME/33.jpg",
+            "https://babybounce500.github.io/ANIME/34.jpg",
+            "https://babybounce500.github.io/ANIME/35.jpg",
+            "https://babybounce500.github.io/ANIME/36.jpg",
+            "https://babybounce500.github.io/ANIME/37.jpg",
+            "https://babybounce500.github.io/ANIME/38.jpg",
+            "https://babybounce500.github.io/ANIME/39.jpg",
+            "https://babybounce500.github.io/ANIME/40.jpg",
+            "https://babybounce500.github.io/ANIME/40.jpg",
+            "https://babybounce500.github.io/ANIME/40.jpg",
+            "https://babybounce500.github.io/ANIME/41.jpg",
+            "https://babybounce500.github.io/ANIME/42.jpg",
+            "https://babybounce500.github.io/ANIME/43.jpg",
+            "https://babybounce500.github.io/ANIME/44.jpg",
+            "https://babybounce500.github.io/ANIME/45.jpg",
+            "https://babybounce500.github.io/ANIME/46.jpg",
+            "https://babybounce500.github.io/ANIME/47.jpg",
+            "https://babybounce500.github.io/ANIME/48.jpg",
+            "https://babybounce500.github.io/ANIME/49.jpg",
+            "https://babybounce500.github.io/ANIME/50.jpg",
+    // ... (rest of the image URLs will remain as they are)
+];
+
+let currentIndex = 0;
+const imageElement = document.getElementById("currentImage");
+
+function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    imageElement.src = images[currentIndex];
+}
+
+setInterval(changeImage, 3000);  // Change the image every 3 seconds
+
+    </script>
+</body>
+</html>
